@@ -13,22 +13,25 @@
     <title>Play ground</title>
   </head>
   <body class="font-poppins">
-    <main
-      class="min-h-screen bg-[#010313] bg-[url(images/background.png)] bg-no-repeat bg-center"
-    >
-      <section class="home text-white min-h-screen flex justify-center items-center"
+    <main class="min-h-screen bg-[#010313] bg-[url(images/background.png)] bg-no-repeat bg-center">
+      <section
+        id="home-screen"
+        class="text-white min-h-screen flex justify-center items-center"
       >
         <div class="flex flex-col items-center justify-center gap-10">
           <h1 class="text-8xl anton-regular uppercase">Alpha Clash Pro</h1>
           <p class="text-2xl">
             Unleash Your Keyboard Kung Fu : Press “Enter” to Play
           </p>
-          <button class="btn bg-white text-black text-2xl font-semibold">
+          <button
+            onclick="play()"
+            class="btn bg-white text-black text-2xl font-semibold"
+          >
             Play Now
           </button>
         </div>
       </section>
-      <section class="play-ground hidden">
+      <section id="play-screen" class="play-ground hidden">
         <div class="flex flex-col items-center gap-20 pt-24">
           <!-- screen-->
           <div class="">
@@ -98,15 +101,22 @@
           </div>
         </div>
       </section>
-      <section class="score flex justify-center items-center min-h-screen hidden">
-        <div class="text-white text-center space-y-6 bg-[#FFFFFF33] p-4 rounded-2xl">
-          <h1 class=""><span class="font-extrabold text-6xl">Score :</span>
-          <span class="font-extrabold text-6xl">14</span>
+      <section
+        class="score flex justify-center items-center min-h-screen hidden"
+      >
+        <div
+          class="text-white text-center space-y-6 bg-[#FFFFFF33] p-4 rounded-2xl"
+        >
+          <h1 class="">
+            <span class="font-extrabold text-6xl">Score :</span>
+            <span class="font-extrabold text-6xl">14</span>
           </h1>
           <button class="btn">Play Again</button>
           <p>Practice will make you Pro</p>
         </div>
       </section>
     </main>
+
+    <script src="alpha.js"></script>
   </body>
 </html>
